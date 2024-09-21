@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+#include "hack_func.h"
 
 const long SEARCH_RANGE = 1000;
 const long FLAG = 0xdeadbeef;
