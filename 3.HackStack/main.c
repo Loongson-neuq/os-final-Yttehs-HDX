@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #include "hack_func.h"
 
 const long SEARCH_RANGE = 1000;
@@ -16,7 +15,7 @@ int main()
 
     long target_value = rand() << 32 | rand();
 
-    hack_func(FLAG, target_value, SEARCH_RANGE * sizeof(long));
+    hack_func(FLAG, target_value, (SEARCH_RANGE + 10) * sizeof(long));
 
     int hacked = where_flag_exists[flag_idx] == target_value;
 
